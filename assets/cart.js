@@ -224,3 +224,64 @@ if (!customElements.get('cart-note')) {
     }
   );
 }
+
+
+// Initial state
+// const initialState = {
+//   cartItems: [],
+//   lineItemStatusElement: null,
+// };
+
+// // Reducer function
+// function cartReducer(state, action) {
+//   switch (action.type) {
+//     case 'ADD_TO_CART':
+//       return {
+//         ...state,
+//         cartItems: [...state.cartItems, action.payload],
+//       };
+//     case 'REMOVE_FROM_CART':
+//       return {
+//         ...state,
+//         cartItems: state.cartItems.filter((item) => item.id !== action.payload),
+//       };
+//     case 'SET_LINE_ITEM_STATUS_ELEMENT':
+//       return {
+//         ...state,
+//         lineItemStatusElement: action.payload,
+//       };
+//     default:
+//       return state;
+//   }
+// }
+
+// // Action creators
+// function addToCart(item) {
+//   return {
+//     type: 'ADD_TO_CART',
+//     payload: item,
+//   };
+// }
+
+// function removeFromCart(itemId) {
+//   return {
+//     type: 'REMOVE_FROM_CART',
+//     payload: itemId,
+//   };
+// }
+
+// function setLineItemStatusElement(element) {
+//   return {
+//     type: 'SET_LINE_ITEM_STATUS_ELEMENT',
+//     payload: element,
+//   };
+// }
+
+// // Example usage
+// let state = initialState;
+
+// state = cartReducer(state, addToCart({ id: 1, name: 'Product 1' }));
+// state = cartReducer(state, addToCart({ id: 2, name: 'Product 2' }));
+// state = cartReducer(state, removeFromCart(1));
+// state = cartReducer(state, setLineItemStatusElement(document.getElementById('shopping-cart-line-item-status')));
+
